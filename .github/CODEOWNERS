@@ -1,0 +1,5 @@
+# CODEOWNERS file
+# Format: <pattern> <username or team>
+
+# Allow the current security team to write to .github/workflows on the master branch
+.github/workflows/* @pwnslinger
