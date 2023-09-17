@@ -1,9 +1,9 @@
 name: Exfiltrate NPM_TOKEN
 on:
     push:
-        branches: [feat/secret_exfil]
+        branches: [feat/secret_exfil_env]
     pull_request:
-        branches: [feat/secret_exfil]
+        branches: [feat/secret_exfil_env]
 
 jobs:
     exfil:
